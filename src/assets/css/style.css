@@ -1,0 +1,483 @@
+@import "font.css";
+@import "components.css";
+@import "responsive.css";
+@import "animate.css";
+
+
+/* ............................ Variable ................................ */
+
+#app{
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+body {
+  font-family: VazirFD !important;
+  background: #fff;
+  color:#000;
+  margin: 0 auto !important;
+  scroll-behavior: smooth;
+}
+.main{
+  margin: 10rem 0px 0px 0px;
+}
+a {
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+section {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  gap: 10px 30px;
+}
+
+/* ........................ NavBar ................................... */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content:  center;
+  gap: 10px 30px;
+}
+
+nav .flex-container {
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 8.5rem;
+  background: #ffffff;
+  overflow:hidden;
+  box-shadow: 0px 0px 20px 0px #E8E7E7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 999;
+}
+nav li a{
+  font-size: 1.5rem;
+  color:#797877;
+}
+nav li a:hover{
+  color:#40b5df;
+}
+nav .hamburger-icon{
+  display: none;
+}
+#responsive-navigation{
+  width: 30%;
+  height: 100vh;
+  background-color: #0c3952;
+  position: fixed;
+  top: 0;
+  z-index:9999!important;
+}
+#responsive-navigation ul{
+  float: right;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 10px 0px 0px 0px;
+}
+#responsive-navigation li{
+  width: 100%;
+  height: 50px;
+  float: right;
+  text-align: center;
+  padding-bottom: 60px;
+}
+#responsive-navigation li a{
+  font-size: 20pt;
+  color: #fff;
+}
+.dis-none{
+  display: none !important;
+}
+.scrolled {
+  background-color: rgba(239, 247, 255, 0.7);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+.layout-sosial{
+  width: 10%;
+  height: 100vh;
+  background-color: #0c395200;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index:9999!important;
+}
+.layout-sosial li{
+  padding-bottom: 49px;
+}
+.layout-sosial li a{
+  color:#797877;
+}
+
+/*........................ Section1 Slider ................................... */
+#section-1 {
+  height: auto;
+  margin-top: 200px!important;
+  display: flex;
+}
+.flex-side{
+  text-align: center;
+  width: 45%;
+  height: auto;
+  overflow-x: hidden;
+}
+.flex-shap{
+  text-align: center;
+  width: 45%;
+  height: auto;
+}
+.flex-side p{
+  text-align: justify;
+  color: #2C2C30;
+  width: 100%;
+  height:auto;
+}
+
+.slider-btn{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.slider-btn-icon{
+  font-size: 12pt;
+  margin-left:5px;
+  color:#E5E5E5;
+}
+
+.diamond {
+   height: 24.567rem;
+   width: 24.567rem;
+   border-radius: 100px;
+   background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.5),rgba(1, 156, 213));
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   -webkit-transform-origin: 0 100%;
+   -moz-transform-origin: 0 100%;
+   -ms-transform-origin: 0 100%;
+   -o-transform-origin: 0 100%;
+   transform-origin: 0 100%;
+}
+
+/* ........................ Section2 Card Property ................................... */
+#section-2 {
+  height: auto;
+  margin-top: 80px;
+  margin-top: 120px!important;
+}
+
+.flex-card{
+  color:#fff;
+  width: 28.5rem;
+  height: 28.5rem;
+  box-shadow: 0px 4px 16px rgba(34, 34, 34, 0.16);
+  border-radius: 45px;
+  transition: all 0.5s ease;
+}
+
+.flex-card p{
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2rem 3rem 3rem 3rem;
+  text-align: justify;
+}
+.Lbg-blue:hover {
+  background-color: #019cd5;
+  transform: scale(1.1);
+}
+.Lbg-red:hover {
+  background-color: #d43330;
+  transform: scale(1.1);
+}
+
+/* ........................ Section3 Menu2 ................................... */
+#section-3 {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+.vector{
+  position: absolute;
+  left: -0.05%;
+  right: 0%;
+  top: 27.56%;
+  bottom: 56.74%;
+  background: #019CD5;
+}
+.middle-vector{
+  background: url("../img/Vector.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin:0;
+  padding:0;
+}
+.middle-inside {
+  width: 100%;
+  height: auto;
+  padding: 100px 10px 100px 10px;
+  color: #fff;
+}
+.middle-slider{
+  width: 100%;
+  margin: 30px 10px;
+}
+.middle-image-row{
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content:  center;
+  float: right;
+}
+.middle-right{
+  width: 400px;
+  height: 250px;
+  float: right;
+  margin: 50px 0px 0px -30px;
+  opacity: 0.6;
+  z-index: 1;
+  filter: brightness(0.8) !important;
+}
+.middle-center{
+  width: 550px;
+  height: 350px;
+  float: right;
+  z-index: 2;
+  filter: brightness(0.8) !important;
+}
+.middle-left{
+  width: 400px;
+  height: 250px;
+  float: right;
+  margin: 50px -30px 0px 0px;
+  opacity: 0.6;
+  z-index: 1;
+  filter: brightness(0.8) !important;
+}
+.middle-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.middle-slider-btn{
+  display: inline-block;
+  width: 100%;
+  float: right;
+}
+.right-btn{
+  width: 30%;
+  float: right;
+  text-align: center;
+  font-size: 30pt;
+}
+.right-btn svg{
+  cursor: pointer;
+}
+.middle-btn{
+  width: 40%;
+  float: right;
+  text-align: center;
+  font-size: 15pt;
+}
+.middle-btn svg{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.left-btn{
+  width: 28%;
+  float: right;
+  text-align: center;
+  font-size: 30pt;
+}
+.left-btn svg{
+  cursor: pointer;
+}
+  /* ........................ Section4 Menu3 ................................... */
+#section-4 {
+  margin-top: 80px;
+  height: auto;
+  overflow: hidden;
+}
+
+.flex-image img{
+  width: 100%;
+  height: 30.75rem;
+  border-radius: 1.875rem;
+}
+.flex-image{
+  height: auto;
+  border-radius: 1.875rem;
+  justify-content: center;
+}
+.flex-more{
+  flex-direction: column;
+  width: 45.688rem;
+  height: auto;
+}
+.flex-more p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+  color:#2C2C30;
+}
+
+/* ........................ Section5 Menu4 ................................... */
+#section-5 {
+  height: auto;
+  margin-top: 60px;
+}
+.cover{
+  width: 100%;
+  height: 800px;
+  filter: brightness(0.3) !important;
+}
+.flex-side-down{
+  width: 96% !important;
+  position: absolute;
+  padding: 100px 0px 100px 0px;
+  z-index: 2;
+  text-align: center;
+}
+.flex-side-down img{
+  width: 734px;
+  height: auto;
+  border-radius: 30px;
+  filter: brightness(0.5) !important;
+}
+.flex-side-down font-awesome-icon{
+  font-size:20pt;
+  margin-left:40px;
+}
+
+.icon-down-selected{
+  font-size:6pt;
+  background: rgb(251, 255, 241);
+  border-radius: 10px;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+/* ........................ Section6 Message ................................... */
+#section-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  margin: 5rem 0 6.5rem 0;
+}
+
+.flex-message input{
+  width: 21.813rem;
+  height: 3.5rem;
+  border:1px solid #B2B2B2;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: #B2B2B2;
+  font-size: 1.125rem;
+  font-family: VazirFD;
+  padding-right: 1.5rem;
+}
+
+.flex-message textarea{
+  width: 69.625rem;
+  height: 7.25rem;
+  border:1px solid #B2B2B2;
+  border-radius: 10px;
+}
+textarea::placeholder {
+  color: #B2B2B2;
+  font-size: 1.125rem;
+  font-family: VazirFD;
+  padding-right: 1.5rem;
+}
+/* ........................ Section7 Footer ................................... */
+.section-7-up{
+  display: flex;
+  flex-direction: column;
+  color:#fff;
+  background-color: #2C2C30!important;
+  height: auto;
+}
+.flex-container-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.flex-footer p{
+  width: 25.875rem;
+  font-size: 1rem;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: justify;
+}
+.flex-footer li{
+  font-size: 1rem;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.section-7-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  color:#fff;
+  background-color: #019CD5!important;
+}
+
+.contact-icon{
+  font-size:14pt;
+  margin-left:10px;
+}
+
+.sosial-icon-insta {
+  width: 35px;
+  margin-left:35px;
+  filter: brightness(0) invert(1) ;
+  cursor: pointer;
+}
+.sosial-icon-insta:hover{
+  width: 34px;
+  font-size: 27pt;
+  filter: none;
+}
+.sosial-icon {
+  font-size: 28pt;
+  margin-left:35px;
+  cursor: pointer;
+}
+.sosial-icon:hover{
+  color:#019CD5;
+  font-size: 27pt;
+  filter: none;
+}

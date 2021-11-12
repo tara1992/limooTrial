@@ -1,0 +1,116 @@
+/* Limoo Components Stylesheet */
+.fs8{
+  font-size: 1.125rem;
+}
+.fs9{
+  font-size: 1.5rem;
+  line-height: 3.125rem;
+}
+.fs10{
+  font-size: 2.25rem;
+  line-height: 3.626rem;
+}
+.fs11{
+  font-size: 2.5rem;
+  line-height: 4.028rem;
+}
+.fs12{
+  font-size: 3rem;
+  line-height: 4.834rem;
+}
+.fs13{
+  font-size: 5rem;
+  line-height: 8.057rem;
+}
+.fw3{
+  font-weight: 500;
+}
+.fw4{
+  font-weight: 700;
+}
+.fw5{
+  font-weight: 900;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.color-light{
+  color:#fff;
+}
+.color-dark{
+  color:#000;
+}
+.m-1{
+  margin:1rem;
+}
+.mr-1{
+  margin-right: 3rem;
+}
+.mb-4{
+  margin-bottom: 80px;
+}
+.Lbg-blue {
+  background: #16A8FC;
+}
+.Lbg-red {
+  background: #FD3D39;
+}
+
+.Lbtn1{
+  float:left;
+  width: 15.938rem;
+  height: 3.5rem;
+  background-color: #40b5df;
+  border-radius: 1.875rem ;
+  border: 2.5px solid #f5f6f8;
+  color: #fff ;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.Lbtn1:hover{
+  background-color: #16a8fc;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.Lbtn2{
+  float:right;
+  width: 12.813rem;
+  height: 3.5rem;
+  background-color: #fff;
+  border-radius: 0.625rem ;
+  border: 1px solid #797877;
+  color: #797877 ;
+  font-size: 1.125rem;
+  text-align: center;
+  font-family: VazirFD;
+
+}
+.Lbtn2:hover{
+  background-color: #40b5df;
+  border: 1px solid #40b5df;
+  color: #ffffff ;
+  cursor: pointer;
+}
+
+.Lbtn3{
+  position: absolute;
+  left: 0px;
+  right: auto;
+  margin: 30px 0px 0px 40px;
+  width: 10.813rem;
+  height: 3.5rem;
+  background-color: #2C2C30;
+  border-radius: 0.625rem ;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF ;
+  font-size: 1.125rem;
+  text-align: center;
+  font-family: VazirFD;
+  cursor: pointer;
+}
