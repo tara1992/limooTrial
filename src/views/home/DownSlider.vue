@@ -1,20 +1,20 @@
 <template>
-<section id="section-5">
-  <div class="flex-container">
-    <div class="flex-side-down">
-      <h3 class="fs10 text-center color-light">
-        <font-awesome-icon :icon="['fa', 'quote-right']" style="margin-left:40px;" />
-        منوی شماره 4
-        <font-awesome-icon :icon="['fa', 'quote-left']" style="margin-right:40px;" />
-      </h3>
-      <transition
-      enter-active-class="animated fadeIn delay-1s"
-      mode="in-out"
-      v-for="item in items" :key="item.id"
-      >
-      <div v-if="topSlider === item.id ">
-        <img :src="item.img" >
-      </div>
+  <section id="section-5">
+    <div class="flex-container">
+      <div class="flex-side-down">
+        <h3 class="fs10 text-center color-light">
+          <font-awesome-icon :icon="['fa', 'quote-right']" style="margin-left:40px;" />
+          منوی شماره 4
+          <font-awesome-icon :icon="['fa', 'quote-left']" style="margin-right:40px;" />
+        </h3>
+        <transition
+        enter-active-class="animated fadeIn delay-1s"
+        mode="in-out"
+        v-for="item in items" :key="item.id"
+        >
+        <div v-if="topSlider === item.id ">
+          <img :src="item.img" >
+        </div>
       </transition>
       <div class="slider-btn color-light mb-4">
         <a class="slider-btn-icon" @click="changeSlider(topSlider - 1)">
@@ -25,25 +25,25 @@
         v-for="icon in icons"
         :key="icon"
         @click="changeSlider(icon)">
-          <span
-          class="icon-down-selected"
-          v-if="topSlider == icon"
-          >
-            ...........
-          </span>
-          <font-awesome-icon
-          :icon="['fa', 'circle']"
-          v-else
-          />
+        <span
+        class="icon-down-selected"
+        v-if="topSlider == icon"
+        >
+        ...........
+        </span>
+        <font-awesome-icon
+        :icon="['fa', 'circle']"
+        v-else
+        />
         </a>
 
-        <a class="slider-btn-icon" @click="changeSlider(topSlider + 1)">
-          <font-awesome-icon :icon="['fa', 'caret-square-left']" style="font-size:25pt; margin-right:44px;" />
-        </a>
-      </div>
-    </div>
-      <img src="@/assets/img/DownCover.jpg"  class="cover">
+    <a class="slider-btn-icon" @click="changeSlider(topSlider + 1)">
+      <font-awesome-icon :icon="['fa', 'caret-square-left']" style="font-size:25pt; margin-right:44px;" />
+    </a>
   </div>
+</div>
+<img src="@/assets/img/DownCover.jpg"  class="cover">
+</div>
 </section>
 </template>
 
@@ -83,6 +83,11 @@ export default {
       }
     }
   },
+  mounted() {
+    window.setInterval(() => {
+      this.changeSlider(this.topSlider + 1)
+    }, 5000)
+  }
 }
 </script>
 

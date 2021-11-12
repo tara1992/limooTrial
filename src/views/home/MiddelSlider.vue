@@ -8,7 +8,7 @@
           </h3>
           <div class="middle-slider">
             <transition
-            enter-active-class="animated bounceOut delay-1s"
+            enter-active-class="animated fadeInLeftBig"
             >
               <div class="middle-image-row">
                 <div class="middle-right">
@@ -71,7 +71,9 @@ export default {
   data(){
     return{
       topSlider: 1,
-
+      icons:[
+        1, 2, 3
+      ],
 
       middleImageR: items[0],
       middleImageC: items[1],
@@ -110,6 +112,11 @@ export default {
 
     }
   },
+  mounted() {
+    window.setInterval(() => {
+      this.changeSlider('next')
+    }, 5000)
+  }
 }
 </script>
 
