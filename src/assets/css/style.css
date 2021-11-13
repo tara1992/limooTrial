@@ -210,6 +210,7 @@ nav .hamburger-icon{
   transform: scale(1.1);
 }
 
+
 /* ........................ Section3 Menu2 ................................... */
 #section-3 {
   width: 100%;
@@ -315,6 +316,11 @@ nav .hamburger-icon{
 }
 .left-btn svg{
   cursor: pointer;
+}
+.caption-image{
+  position: absolute;
+   bottom: 8px;
+   right: 16px;
 }
   /* ........................ Section4 Menu3 ................................... */
 #section-4 {

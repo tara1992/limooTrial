@@ -7,6 +7,7 @@
           منوی شماره 4
           <font-awesome-icon :icon="['fa', 'quote-left']" style="margin-right:40px;" />
         </h3>
+
         <transition
         enter-active-class="animated fadeIn delay-1s"
         mode="in-out"
@@ -15,6 +16,7 @@
         <div v-if="topSlider === item.id ">
           <img :src="item.img" >
         </div>
+
       </transition>
       <div class="slider-btn color-light mb-4">
         <a class="slider-btn-icon" @click="changeSlider(topSlider - 1)">

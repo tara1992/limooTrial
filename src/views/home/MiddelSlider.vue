@@ -12,12 +12,15 @@
             >
               <div class="middle-image-row">
                 <div class="middle-right">
+                  <p class="caption-image">توضیحات مختضر مربوط به عکس بالا</p>
                   <img :src="middleImageR" class="middle-img">
                 </div>
                 <div class="middle-center">
+                  <p class="caption-image">توضیحات مختضر مربوط به عکس بالا</p>
                   <img :src="middleImageC" class="middle-img">
                 </div>
                 <div class="middle-left">
+                  <p class="caption-image">توضیحات مختضر مربوط به عکس بالا</p>
                   <img :src="middleImageL" class="middle-img">
                 </div>
             </div>
